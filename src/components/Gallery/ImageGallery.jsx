@@ -6,8 +6,8 @@ import { GalleryItem } from "components/GalleryItem/GalleryItem"
 export const ImageGallery = ({images}) => {
     return(
         <ImageGalleryList >
-            {images.map(item => 
-                <GalleryItem key={item.id} image={item} />                
+            {images.map(image => 
+                <GalleryItem key={image.id} image={image} />                
             )} 
         </ImageGalleryList>
     )
