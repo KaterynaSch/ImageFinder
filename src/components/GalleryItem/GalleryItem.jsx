@@ -17,7 +17,7 @@ export const GalleryItem = ({image}) => {
    return(
         <ImageGalleryItem >
             <ItemImg src={image.webformatURL} alt='' onClick={openModal} />
-            <GalleryModal image={image}
+            <GalleryModal image={image.largeImageURL}
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}/>                           
         </ImageGalleryItem>

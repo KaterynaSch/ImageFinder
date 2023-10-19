@@ -19,7 +19,7 @@ export const GalleryModal = ({isOpen, onRequestClose, image}) => {
             isOpen = { isOpen }            
             onRequestClose = { onRequestClose } 
             style = { customStyles } > 
-            <img src={image.largeImageURL} alt="" width="640"/>             
+            <img src={image} alt="" width="640"/>             
         </Modal> 
     )
 };

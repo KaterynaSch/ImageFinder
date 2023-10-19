@@ -20,10 +20,6 @@ export const App =() => {
     setImages([]);   
   };
 
-  const handleLoadMore = () => {
-    setPage(prevState => prevState.page + 1);
-  };
-
   useEffect(() => {
     if (query === ""){
         return;
@@ -59,6 +55,11 @@ export const App =() => {
     };
     getImages();
   }, [query, page]);
+
+  
+  const handleLoadMore = () => {
+    setPage(prevState => prevState + 1);
+  };
 
   return (
     <MainContainer>
