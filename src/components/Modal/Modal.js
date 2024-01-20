@@ -8,7 +8,7 @@ const customStyles = {
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-    },
+    }
 };
 
 Modal.setAppElement('#root');  
@@ -22,5 +22,4 @@ export const GalleryModal = ({isOpen, onRequestClose, image}) => {
             <img src={image} alt="" width="640"/>             
         </Modal> 
     )
-};
-  
+};  

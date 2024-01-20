@@ -18,7 +18,7 @@ const theme = {
     l: '16px',
   },
   spacing: value => `${value *4}px`
-}
+};
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

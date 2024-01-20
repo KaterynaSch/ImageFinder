@@ -1,4 +1,4 @@
-import { LoadMoreStyled } from "./LoadMoreBtn.styled"
+import { LoadMoreStyled } from "./LoadMoreBtn.styled";
 
 export const LoadMoreBtn = ({onLoadMore}) => {
     return(
@@ -6,4 +6,4 @@ export const LoadMoreBtn = ({onLoadMore}) => {
             Load more
         </LoadMoreStyled>
     )
-}
+};

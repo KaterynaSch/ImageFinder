@@ -1,13 +1,13 @@
 import { useState } from "react";
 import {toast} from "react-hot-toast";
-import { SearchBtn, Form, SearchInput, FormOverlay } from "./SearchBar.styled"
+import { SearchBtn, Form, SearchInput, FormOverlay } from "./SearchBar.styled";
 
 export const SearchBar = ({onSubmit}) =>{
     const [inputValue, setInputValue] = useState('');  
 
     const handleChangeInput = (evt) => {
         setInputValue(evt.target.value.toLowerCase().trim());    
-    } 
+    }; 
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -15,7 +15,7 @@ export const SearchBar = ({onSubmit}) =>{
             toast('Please fill in the search value.', { icon: '👈' });       
         }
         onSubmit(inputValue);       
-    }
+    };
 
     return (
         <FormOverlay >

@@ -6,7 +6,7 @@ axios.defaults.params = {
     image_type: 'photo',
     orientation: 'horizontal',
     per_page: 12,
-  };
+};
 
 export const fetchImages = async (query, page = 1) => {  
     const queryParams = {
@@ -16,4 +16,4 @@ export const fetchImages = async (query, page = 1) => {
 
     const resp = await axios.get("", { params: queryParams });
     return resp.data;
-}
+};

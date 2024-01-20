@@ -1,5 +1,6 @@
 import { ColorRing } from "react-loader-spinner";
 import { ModalWrapper } from "./Loader.styled";
+
 export const Loader =()=>{
     return(
         <ModalWrapper>
@@ -12,4 +13,4 @@ export const Loader =()=>{
             />
         </ModalWrapper>
     );    
-}
+};
